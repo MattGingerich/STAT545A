@@ -6,7 +6,7 @@ gDat <-
 str(gDat)
 gDat <- subset(gDat, select = -c(timestamp, snowflake))
 
-uDat <- read.delim("courseAdmin/2013-09-07-classlist.txt", as.is = 9:11,
+uDat <- read.delim("courseAdmin/2013-09-12-classlist.txt", as.is = 9:11,
                    strip.white = TRUE)
 str(uDat)
 uDat <- subset(uDat, select = c(StudentNumber, Surname, GivenName,
@@ -14,7 +14,7 @@ uDat <- subset(uDat, select = c(StudentNumber, Surname, GivenName,
 names(uDat) <- c("sNum", "lName", "givenName", "gender", "program",
                  "ubcSubj")
 
-ggDat <- read.csv("courseAdmin//stat545a_2013.csv", skip = 1, as.is = 1:2)
+ggDat <- read.csv("courseAdmin/stat545a_2013.csv", skip = 1, as.is = 1:2)
 str(ggDat)
 ggDat <- subset(ggDat, select = c(Email.address, Nickname))
 names(ggDat) <- c("email", "ggNickname")
@@ -24,5 +24,12 @@ sDat <- merge(sDat, ggDat, by = "email", all = TRUE)
 str(sDat)
 sDat <- with(sDat, sDat[order(ubcSubj), ])
 
-write.table(sDat, "2013-09-07-megalist.txt", quote = FALSE, sep = "\t",
+write.table(sDat, "courseAdmin/2013-09-09-megalist.txt", quote = FALSE, sep = "\t",
             row.names = FALSE)
+
+pHold <- paste0(tolower(uDat$lName), "-", substr(tolower(uDat$givenName), 1, 3))
+pHold <- c(pHold,
+           "inskip-jes", "liu-yan", "haraty-mon", "yuen-mac")
+
+writeLines(paste0("  * ", pHold, " EDIT HERE"),
+           "courseAdmin/placeholderBullets.txt")
