@@ -36,18 +36,37 @@ Monday Sept 02 is a statutory holiday. No class.
     - Suggesting a dataset to work on later in the class or commenting on suggestions made by others
     
   * Work through
-    - [Basic care and feeding of data in R](block02_importInspectAccess.html)
+    - [Basic care and feeding of data in R](block02_careFeedingData.html)
     
   * Feel free to start thinking about some datasets we could work with later in the class
     - [Early draft of a "dataset ideas" page](dataset-ideas.html)
 
-cm 03 | Wednesday Sept 11
+### cm 03 | Wednesday Sept 11 | R objects (beyond data.frames) and R Markdown ([slides as PDF](2013-lectures/cm03_workModes-flavorsCollections-RMarkdown.pdf))
 
-  * *Only for the keeners right now!* [Submit homework](hm01_hw-submission-dryrun.html)
+  * [How to submit homework](hw00_instructions.html)
 
-cm 04 | Monday Sept 16
+  * Submit [homework 1](hw01_compileNotebook.html) ASAP.
+  
+  * Submit [homework 2](hw02_rmarkdownGapminder.html) before class starts @ 9:30am Monday Sept. 16.
+  
+  * Work through
+    - [R objects (beyond data.frames) and indexing](block03_basicObjects.html). Note: you should be able to do the homework before completing this tutorial.
+
+### cm 04 | Monday Sept 16 | *Tentative: Univariate statistics and visual summaries. Data aggregation.*
 
 Wednesday Sept 18 UBC's observance of [National Reconciliation Week](http://irsi.aboriginal.ubc.ca). No class.
+
+* Work through
+    - a tutorial on univariate statistics and visual summaries and/or data aggregation?
+
+  * Post a serious proposal for a dataset and/or make a thoughtful contribution to the discussion of an existing proposal. We need to start fleshing these out. The time needed for data assembly and cleaning is going to break your heart.
+  
+  * Spend an hour (or more if you are new to the command line and scripting) reading these resources about how to ask for help. Don't be paranoid, this is not about you and that question you asked the other day! This material has been in the course for a couple of years. This is another aspect of the culture that one has to actually learn.
+  
+    - The 9th circle of R hell in [The R Inferno](http://www.burns-stat.com/documents/books/the-r-inferno/) by Patrick Burns.
+    - [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) by Eric Raymond.
+    - The [posting guide](http://www.r-project.org/posting-guide.html) for [the R-help mailing list](https://stat.ethz.ch/mailman/listinfo/r-help), which I recommend you NOT post to any time soon. (But by all means, search for answers to your questions there!) Turn to Jenny, Song, and the Google Group first for now.
+    
 
 cm 05 | Monday Sept 23
 
